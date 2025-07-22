@@ -82,13 +82,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 测试结果：通过
 涉及命令包括：
 单独推送主分支
-
+```
 git add .
 git commit -m "您的提交信息"
 git push reactdemo master
-
+```
 其他分支切换到主分支后再合并分支修改内容
-
+```
 git status
 git log --oneline -5
 git branch -a
@@ -106,3 +106,9 @@ git merge main --allow-unrelated-histories
 git add .gitignore
 git commit -m "Merge main branch into master"
 git push reactdemo master
+```
+### 项目启动
+```
+  npm install -g serve
+  serve -s build
+```
